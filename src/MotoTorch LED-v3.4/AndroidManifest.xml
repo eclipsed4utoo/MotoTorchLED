@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.alford.MotoTorchLED"
+      android:versionName="3.6 :: Should work on DROID X ::" android:versionCode="18">
+    <uses-permission android:name="android.permission.FLASHLIGHT" />     
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> 
+    <uses-permission android:name="android.permission.DEVICE_POWER" /> 
+    <uses-permission android:name="android.permission.CAMERA" />
+ 	<uses-feature android:name="android.hardware.camera" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
+    	<activity android:name=".MotoTorch"
+                  android:label="@string/app_name"
+      			  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    	
+		 Broadcast Receiver that will process AppWidget updates 
+		
+		<receiver android:name=".FlashlightWidget" android:label="@string/widget_name"> 
+          <meta-data 
+               android:name="android.appwidget.provider" 
+               android:resource="@xml/widget_flashlight" /> 
+          <intent-filter> 
+               <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action> 
+               <action android:name="android.appwidget.action.APPWIDGET_ENABLE"></action>
+               <action android:name="com.android.mototorchled.widget.CLICK"></action>
+               <!--<action android:name="android.intent.action.PACKAGE_REMOVED"></action>
+               --><!--<action android:name="android.intent.action.CAMERA_BUTTON" /> 
+               <action android:name="com.android.camera.NEW_PICTURE" />
+          --></intent-filter> 
+     </receiver> 
+    </application>
+    <uses-sdk android:minSdkVersion="5" />
+</manifest> 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Screen Brightness</string>
+    <string name="app_name">MotoTorch LED</string>
+    <string name="widget_name">MotoTorch LED</string>
+    <color name="Red">#FF0000</color>
+	<string name="description">This application will use the LED flash of the camera as a flashlight.</string>
+	<color name="Blue">#0000CD</color>
+	<color name="Green">#008B00</color>
+	<color name="Grey">#BBBBBB</color>
+	<color name="Black">#000000</color>
+	<string name="widget_name_large">MotorTorch LED Pro</string>
+</resources>

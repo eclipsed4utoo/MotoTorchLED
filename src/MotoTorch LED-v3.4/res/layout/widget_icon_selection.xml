@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				android:id="@+id/layout_root"
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" 
+                android:padding="1dip"> 
+                
+<LinearLayout
+		android:id="@+id/btn_flame"
+	    android:layout_width="52dip"
+	    android:layout_height="52dip"
+	    android:clickable="true"
+		android:focusable="true"
+		android:gravity="center" android:layout_margin="20dip">
+	
+			<ImageView
+				android:id="@+id/img_flame_setting_no_frame"
+				android:layout_height="40dip"
+	    		android:clickable="true"
+				android:layout_gravity="center"
+				android:layout_width="40dip"
+				android:src="@drawable/mototorch_led_on" 
+				android:scaleType="fitXY"/>
+	
+	</LinearLayout>
+
+<LinearLayout android:id="@+id/main"
+	android:gravity="center"
+    android:background="@drawable/widget_frame_portrait1x1_black" 
+    android:layout_height="74dip" 
+    android:layout_width="74dip" android:layout_margin="10dip"> 
+    
+   
+    
+	<LinearLayout
+		android:id="@+id/btn_led"
+	    android:layout_width="52dip"
+	    android:layout_height="52dip"
+	    android:clickable="true"
+		android:focusable="true"
+		android:gravity="center" android:background="@drawable/generic_button_background_black">
+			
+			<ImageView
+				android:id="@+id/img_flame_setting_with_frame"
+				android:layout_height="40dip"
+				android:layout_gravity="center"
+				android:layout_width="40dip"
+				android:scaleType="fitXY" android:src="@drawable/mototorch_led_on"/>
+	
+	</LinearLayout>
+
+</LinearLayout>
+	
+<LinearLayout
+		android:id="@+id/btn_torch"
+	    android:layout_width="52dip"
+	    android:layout_height="52dip"
+	    android:clickable="true"
+		android:focusable="true"
+		android:gravity="center" android:layout_margin="20dip">
+	
+			<ImageView android:id="@+id/img_torch_setting" 
+					    android:layout_width="72dip" 
+					    android:layout_height="72dip" 
+					    android:clickable="true" 
+					    android:scaleType="fitXY" 
+					    android:src="@drawable/icon" />
+	
+	</LinearLayout>
+
+</LinearLayout>

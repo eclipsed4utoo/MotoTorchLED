@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" 
+                android:padding="1dip"> 
+                
+<ScrollView android:layout_height="wrap_content" 
+			android:id="@+id/ScrollView01" 
+			android:layout_width="wrap_content" 
+			android:scrollbarAlwaysDrawHorizontalTrack="false" 
+			android:scrollbars="vertical">
+			
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView android:id="@+id/TextView03" 
+		  android:layout_height="wrap_content" 
+		  android:background="@color/Grey" 
+		  android:textColor="@color/Black" 
+		  android:text="  Strobe Light" 
+		  android:layout_width="fill_parent" 
+		  android:layout_marginTop="140dip"/>
+		  
+<TextView android:id="@+id/TextView04" 
+		  android:layout_height="wrap_content" 
+		  android:background="@color/Grey" 
+		  android:textColor="@color/Black" 
+		  android:layout_width="fill_parent" 
+		  android:text="  Morse Code" 
+		  android:layout_marginTop="290dip"/>
+
+<TextView  
+    android:layout_height="wrap_content" 
+    android:text="@string/hello" 
+    android:layout_marginLeft="20dip" 
+    android:layout_width="140dip" 
+    android:layout_marginTop="55dip" android:visibility="invisible"/>
+    
+<SeekBar android:layout_height="wrap_content" 
+		  android:id="@+id/seekDelay" 
+		  android:layout_marginLeft="20dip" 
+		  android:layout_marginTop="185dip" 
+		  android:progress="25" 
+		  android:layout_width="170dip" 
+		  android:paddingLeft="10dip" 
+		  android:paddingRight="10dip" 
+		  android:max="500"/>
+		  
+<SeekBar android:layout_height="wrap_content" 
+		  android:id="@+id/seekDuration" 
+		  android:layout_marginLeft="20dip" 
+		  android:layout_marginTop="240dip" 
+		  android:progress="25" 
+		  android:layout_width="170dip" 
+		  android:paddingLeft="10dip" 
+		  android:paddingRight="10dip" 
+		  android:max="500"/>
+		  
+<SeekBar android:layout_height="wrap_content" 
+		  android:id="@+id/seekBrightness" 
+		  android:layout_marginTop="70dip" 
+		  android:progress="10" 
+		  android:saveEnabled="true" 
+		  android:max="255" 
+		  android:layout_width="170dip" 
+		  android:layout_marginLeft="15dip" 
+		  android:paddingLeft="10dip" 
+		  android:paddingRight="10dip" 
+		  android:visibility="invisible"/>
+		  
+<CheckBox android:layout_width="wrap_content" 
+		  android:id="@+id/chkDimScreen" 
+		  android:text="Dim Screen" 		  
+		  android:onClick="chkDimScreen_Click" 
+		  android:layout_height="20dip" 
+		  android:layout_marginLeft="18dip" 
+		  android:clickable="true" 
+		  android:textSize="20px" 
+		  android:layout_marginTop="30dip" 
+		  android:visibility="invisible"/>
+		  
+<CheckBox android:layout_width="wrap_content" 
+		  android:id="@+id/chkTurnOffScreen" 
+		  android:onClick="chkTurnOffScreen_Click" 
+		  android:layout_height="20dip" 
+		  android:layout_marginLeft="18dip" 
+		  android:clickable="true" 
+		  android:textSize="20px" 
+		  android:text="Turn Off Screen" 
+		  android:layout_marginTop="110dip" 
+		  android:visibility="invisible"/>
+		  
+<TextView android:id="@+id/TextView02" 
+		  android:layout_height="wrap_content" 
+		  android:background="@color/Grey" 
+		  android:textColor="@color/Black" 
+		  android:layout_width="fill_parent" 
+		  android:text="  LED Torch Mode"/>
+
+<TextView android:layout_height="wrap_content" 
+		  android:layout_marginLeft="130dip" 
+		  android:id="@+id/lblStrobeDuration" 
+		  android:text="1000 ms" 
+		  android:layout_width="70dip" 
+		  android:layout_marginTop="220dip"/>	 
+		  
+<TextView android:layout_height="wrap_content" 
+		  android:id="@+id/TextView109" 
+		  android:layout_marginTop="30dip" 
+		  android:layout_marginLeft="20dip" 
+		  android:layout_width="wrap_content" 
+		  android:text="Use Menu --&gt; Torch Settings, to configure settings"/>	 
+
+
+<TextView android:layout_height="wrap_content" 
+		  android:layout_marginTop="165dip" 
+		  android:layout_marginLeft="110dip" 
+		  android:id="@+id/lblStrobeDelay" 
+		  android:text="1000 ms" 
+		  android:layout_width="70dip" />
+
+<CheckBox android:layout_width="wrap_content" 
+		  android:id="@+id/chkContinueRunning" 
+		  android:text="Run Continuously" 		  
+		  android:onClick="chkContinueRunning_Click" 
+		  android:layout_height="20dip" 
+		  android:layout_marginLeft="18dip" 
+		  android:clickable="true" 
+		  android:textSize="20px" 
+		  android:layout_marginTop="390dip"/>
+
+<TextView android:layout_height="wrap_content" 
+		  android:layout_width="wrap_content" 
+		  android:layout_marginLeft="20dip" 
+		  android:id="@+id/TextView9" 
+		  android:text="Enter Text For Morse Code:" 
+		  android:layout_marginTop="315dip"/>
+
+<Button 
+	android:layout_height="wrap_content" 
+	android:clickable="true" 
+	android:id="@+id/btnLED" 
+	android:text="Turn LED ON" 
+	android:textColor="@color/Green" 
+	android:onClick="btnLED_Click" 
+	android:layout_width="110dip" 
+	android:hapticFeedbackEnabled="true" android:layout_marginLeft="90dip" android:layout_marginTop="80dip"/>
+
+<EditText 
+	android:text="" 
+	android:id="@+id/txtMorseCode" 
+	android:width="400dip" 
+	android:layout_marginLeft="20dip" 
+	android:inputType="text" 
+	android:height="40dip" 
+	android:paddingLeft="5dip" 
+	android:textSize="25px" 
+	android:layout_height="40dip" 
+	android:layout_width="270dip" 
+	android:layout_marginTop="335dip"/>
+	
+<Button 
+	android:layout_height="wrap_content" 
+	android:text="Send Morse Code"  
+	android:clickable="true" 
+	android:id="@+id/btnMorseCode" 
+	android:onClick="btnMorseCode_Click" 
+	android:textColor="@color/Green" 
+	android:layout_marginLeft="190dip" 
+	android:layout_marginTop="380dip" 
+	android:layout_width="110dip"/>
+
+<TextView android:layout_height="wrap_content" 
+		  android:layout_marginLeft="20dip" 
+		  android:layout_marginTop="165dip" 
+		  android:text="Strobe Delay:" 
+		  android:layout_width="90dip" 
+		  android:id="@+id/TextView08"/>
+		  
+<TextView android:layout_height="wrap_content" 
+		  android:layout_marginLeft="20dip" 
+		  android:id="@+id/lblStrobeDuration" 
+		  android:layout_marginTop="220dip" 
+		  android:text="Strobe Duration:" 
+		  android:layout_width="110dip"/>
+
+<Button android:layout_height="wrap_content" 
+		android:text="Start Strobe" 
+		android:id="@+id/btnStartStrobe" 
+		android:onClick="btnStartStrobe_Click" 
+		android:textColor="@color/Green" 
+		android:layout_marginLeft="190dip" 
+		android:layout_marginTop="230dip" 
+		android:layout_width="110dip"/>
+
+<Button 
+	android:layout_height="wrap_content" 
+	android:text="Exit"  
+	android:clickable="true" 
+	android:id="@+id/btnExit" 
+	android:onClick="btnExit_Click" 
+	android:layout_width="102dip" 
+	android:layout_marginLeft="100dip" 
+	android:layout_marginTop="460dip"/>
+	
+<FrameLayout android:id="@+id/surface_camera"
+		android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="1dip">		
+	</FrameLayout>
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

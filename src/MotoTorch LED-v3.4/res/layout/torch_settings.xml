@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+  			    android:id="@+id/torch_settings_root" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" 
+                android:padding="1dip"> 
+                
+	<ScrollView android:layout_height="wrap_content" 
+				android:id="@+id/ScrollView01" 
+				android:layout_width="wrap_content" 
+				android:scrollbarAlwaysDrawHorizontalTrack="false" 
+				android:scrollbars="vertical">
+			
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					    android:orientation="vertical"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    >
+    
+			<CheckBox android:layout_width="wrap_content" 
+		  			  android:onClick="chkDimScreen_Click" 
+					  android:layout_height="40dip" 
+					  android:layout_marginLeft="250dip" 
+					  android:clickable="true" 
+					  android:textSize="25px" 
+					  android:visibility="visible" 
+					  android:text="" 
+					  android:layout_marginTop="80dip" android:id="@+id/chkTorchSettingsDimScreen"/>
+		  
+			<CheckBox android:layout_width="wrap_content" 
+					  android:onClick="chkTurnOffScreen_Click" 
+					  android:layout_height="40dip" 
+					  android:layout_marginLeft="250dip" 
+					  android:clickable="true" 
+					  android:textSize="25px" 
+					  android:text="" android:layout_marginTop="210dip" android:id="@+id/chkTorchSettingsTurnOffScreen"/>
+					  
+			<SeekBar android:layout_height="wrap_content" 
+					 android:progress="10" 
+					 android:saveEnabled="true" 
+					 android:max="255" 
+					 android:layout_marginLeft="15dip" 
+					 android:paddingLeft="10dip" 
+					 android:paddingRight="10dip" 
+					 android:visibility="visible" 
+					 android:layout_marginTop="150dip" android:layout_width="250dip" android:id="@+id/seekTorchSettingsBrightness"/>
+					 
+			<TextView android:layout_height="wrap_content" 
+					  android:layout_width="wrap_content" 
+					  android:id="@+id/TextView9" 
+					  android:textColor="@color/Red" 
+					  android:textStyle="bold" 
+					  android:layout_marginLeft="20dip" 
+					  android:text="NOTE:  Dim screen will not work from the widget due to a bug in Android." 
+					  android:layout_marginTop="30dip"/>
+					  
+			<TextView android:layout_height="wrap_content" 
+					  android:id="@+id/TextView9" 
+					  android:text="Slide to choose brightness when Torch mode is on" 
+					  android:layout_marginLeft="20dip" 
+					  android:layout_marginTop="105dip" 
+					  android:layout_width="220dip"/>
+					  
+			<TextView android:layout_height="wrap_content" 
+					  android:id="@+id/TextView9" 
+					  android:text="Turns off screen when Torch mode is on. (may require unlocking)" 
+					  android:layout_marginLeft="20dip" 
+					  android:layout_marginTop="240dip" android:layout_width="240dip"/>
+					  
+			<TextView android:layout_height="25dip" 
+					  android:layout_width="wrap_content" 
+					  android:id="@+id/TextView9" 
+					  android:text="Change Screen Brightness" 
+					  android:layout_marginLeft="20dip" 
+					  android:layout_marginTop="76dip" android:textSize="27px" android:textStyle="bold"/>
+					  
+			<TextView android:layout_height="25dip" 
+					  android:layout_width="wrap_content" 
+					  android:id="@+id/TextView9" 
+					  android:text="Turn Off Screen" 
+					  android:layout_marginLeft="20dip" 
+					  android:layout_marginTop="210dip" android:textSize="27px" android:textStyle="bold"/>
+					  
+			<TextView android:id="@+id/TextView02" 
+					  android:layout_height="wrap_content" 
+					  android:background="@color/Grey" 
+					  android:textColor="@color/Black" 
+					  android:layout_width="fill_parent" 
+					  android:text="  LED Torch Settings"/>
+					  
+			<TextView android:id="@+id/TextView02" 
+					  android:background="@color/Grey" 
+					  android:textColor="@color/Black" 
+					  android:layout_width="fill_parent"  
+					  android:text="" 
+					  android:layout_height="2dip" 
+					  android:layout_marginTop="190dip"/>
+    
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>
